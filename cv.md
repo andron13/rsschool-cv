@@ -35,6 +35,18 @@ Digital Marketing Specialist with over 15 years in IT Business. I especially app
 2. [Hackerrank profile](https://www.hackerrank.com/andron13)
 3. [Telegram Bot as SpringBoot starter app](https://github.com/andron13/telegramBotForAWSExample13)
 
+### SOLUTION EXAMPLE
+
+- [High and low kata](https://www.codewars.com/kata/554b4ac871d6813a03000035)
+```js
+function highAndLow(numbers) {
+    let arr = numbers.split(" ").map(item => parseInt(item));
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+    return max + " " + min;
+}
+```
+
 ---
 
 ## EXPERIENCE
