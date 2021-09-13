@@ -1,6 +1,6 @@
 # CURRICULUM VITAE
 
-Name & Surname: Andrej Podlubnyj
+#### Name & Surname: Andrej Podlubnyj
 
 ---
 
@@ -19,7 +19,7 @@ Digital Marketing Specialist with over 15 years in IT Business. I especially app
 
 ## SKILLS
 
-|||
+|Stack|Learned|
 |:----|:----|
 |FRONT-END: 	|		JavaScript, HTML5, CSS|
 |BACK-END: 	|		Java|
@@ -38,14 +38,14 @@ Digital Marketing Specialist with over 15 years in IT Business. I especially app
 ### SOLUTION EXAMPLE
 
 - [High and low kata](https://www.codewars.com/kata/554b4ac871d6813a03000035)
-```js
+````js
 function highAndLow(numbers) {
     let arr = numbers.split(" ").map(item => parseInt(item));
     let min = Math.min(...arr);
     let max = Math.max(...arr);
     return max + " " + min;
 }
-```
+````
 
 ---
 
