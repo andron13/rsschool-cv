@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+root {
+    --main-bg-color: hsl(0, 0%, 100%);
+    --main-font-color: hsl(0, 0%, 20%);
+    --my-gold-color: hsl(51, 100%, 50%);
+}
+
 html {
     /* Typography */
     font-size: 62.5%;
@@ -9,52 +15,115 @@ html {
     text-align: justify;
 
     /* Visual */
-    background-color: hsl(0, 0%, 90%);
-    color: #333;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
 }
 
 body {
-    max-width: 100rem;
-    min-width: 50rem;
+    /* Typography */
+    font-size: 1.6rem;
 
-    margin: 0 auto;
-    border: solid gold 1px;
+    /*Mobile first*/
+    display: block;
+    min-width: 32rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-top: black solid 0.5rem;
+    border-bottom: black solid 0.5rem;
+
 }
 
-/* Header */
-header {
-    display: flex;
-    border: solid gold 1px;
+h1 {
+    font-size: 3rem;
 }
 
-.title {
-    margin: 0 auto;
+h2 {
+    font-size: 2.5rem;
+}
 
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*justify-items: center;*/
-    border: solid gold 1px;
+h3,
+h4,
+h5 {
+    font-size: 2rem;
+}
 
+h5 {
+    margin-bottom: 1rem;
+    color: #888;
+}
+
+h6 {
+    font-size: 1.8rem;
+    margin: 0;
 }
 
 .header-avatar img {
-    border-radius: 50%;
     width: 10rem;
-    border: solid gold 1px;
+    border: solid 0.2rem hsl(51, 100%, 50%);
+    border-radius: 50%;
+}
 
+/* Links*/
+a {
+    color: hsl(50, 100%, 50%);
+}
+
+a:hover {
+    color: hsl(50, 50%, 50%);
+}
+
+/*code*/
+pre {
+    font-size: 2rem;
+    color: var(--main-font-color);
+
+    border: 1px solid grey;
+    padding-left: 1rem;
+}
+
+footer {
+    /*Typographic*/
+    font-size: 1rem;
+
+    /*Flex for child items*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 1rem;
 }
 
 
-footer {
-    /*Positioning*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 5rem;
-    padding: 0 1rem;
+@media (min-width: 580px) {
+    body {
+        max-width: 100rem;
+        min-width: 30rem;
+        margin: 0 auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
 
-    /*Typographic+*/
-    font-size: 1rem;
-    background-color: hsl(0, 0%, 75%);
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 5fr 2fr;
+    }
+
+    .header-avatar {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    aside {
+        padding-left: 1rem;
+    }
+
+    footer {
+        grid-column: span 2;
+        grid-row: 3;
+    }
 }

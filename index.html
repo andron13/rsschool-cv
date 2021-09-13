@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!--  Awesome fonts-->
@@ -19,11 +18,12 @@
       <h1>Curriculum Vitae</h1>
       <h2>Andrej Podlubnyj</h2>
     </section>
-    <figure class="header-avatar">
-      <img src="assets/img/square-ap.jpg" alt="andrej podlubnyj foto for CV">
-      <figcaption>IT Consultant</figcaption>
-    </figure>
   </header>
+  <figure class="header-avatar">
+    <img src="assets/img/square-ap.jpg" alt="andrej podlubnyj foto for CV">
+    <figcaption>IT Consultant</figcaption>
+  </figure>
+
 
   <!--  main-->
 
@@ -41,59 +41,17 @@
 
     <article>
       <h3>
-        Personal Information
-      </h3>
-      <ul>
-        <li>Telegram: ptchom</li>
-        <li>Linkedin: ptchom</li>
-        <li>Skype: ptchom</li>
-        <li>Phone: +49 1777708999</li>
-      </ul>
-    </article>
-
-    <article>
-
-      <h3>
-        Skills
-      </h3>
-
-      <table>
-        <thead>
-        <tr>
-          <th colspan="2">Hard Skills</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Front-end</td>
-          <td>JavaScript, HTML5, CSS</td>
-        </tr>
-        <tr>
-          <td>Back-end</td>
-          <td>Java</td>
-        </tr>
-        <tr>
-          <td>Instruments</td>
-          <td> Git, Linux, MySQL, JUnit5, Swagger</td>
-        </tr>
-        <tr>
-          <td>Other</td>
-          <td> Agile, Scrum, Waterfall, Project Management</td>
-        </tr>
-        <tr>
-          <td>Languages</td>
-          <td>English - B1, German - C2, Russian – native</td>
-        </tr>
-        </tbody>
-      </table>
-
-    </article>
-
-    <article>
-      <h3>
         Code Samples
       </h3>
-
+      <pre><code>
+function highAndLow(numbers) {
+    let arr = numbers.split(" ")
+              .map(item => parseInt(item));
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+    return max + " " + min;
+}
+       </code></pre>
       <ol>
         <li>
           <a href="https://www.codewars.com/users/andron13">Codewars</a> profile
@@ -108,19 +66,19 @@
     </article>
 
     <section>
-      <h2>Experience</h2>
+      <h3>Experience</h3>
       <article>
-        <h3>
+        <h5>
           Since 09/2018
-        </h3>
+        </h5>
         <p>
-          Digital Marketing Specialist, IT CONSULTANT, SELF-EMPLOYED, BERLIN
+          Digital Marketing Specialist, It consultant, Sel-Employed, Berlin
         </p>
       </article>
       <article>
-        <h3>
+        <h5>
           08/2008 – 10/2014
-        </h3>
+        </h5>
         <h4>
           Ceo, Internet-Marketing LTD Mogilev
         </h4>
@@ -131,9 +89,9 @@
 
       </article>
       <article>
-        <h3>
+        <h5>
           06/2007 – 07/2008
-        </h3>
+        </h5>
         <h4>Search Engine Optimizer, Self-Employed Activity, Berlin</h4>
         <p>
           I was in charge for the profits of my clients' online business. I also evaluated and found workable solutions
@@ -141,9 +99,9 @@
         </p>
       </article>
       <article>
-        <h3>
+        <h5>
           04/2005 – 05/2007
-        </h3>
+        </h5>
         <h4>
           Ceo, Shareholder, Mediapoint Deutschland Limited & CO. KG, Berlin
         </h4>
@@ -152,9 +110,9 @@
         </p>
       </article>
       <article>
-        <h3>
+        <h5>
           05/2004 – 03/2005
-        </h3>
+        </h5>
         <h4> Sales Director, Unitel Calling Card Limited, Berlin</h4>
         <p>
           I was responsible for the results of the sales department. We focused on selling telecommunications services
@@ -162,9 +120,9 @@
         </p>
       </article>
       <article>
-        <h3>
+        <h5>
           09/2002 – 04/2004
-        </h3>
+        </h5>
         <h4>
           Technical Support Manager, K&W Spielhallenbetrieb GmbH, Berlin
         </h4>
@@ -173,9 +131,9 @@
         </p>
       </article>
       <article>
-        <h3>
+        <h5>
           10/1999 – 09/2002
-        </h3>
+        </h5>
         <h4>
           System Administrator, Erik Missal & Can GbR, Berlin
         </h4>
@@ -185,13 +143,13 @@
       </article>
     </section>
     <section>
-      <h2>
+      <h3>
         Education
-      </h2>
+      </h3>
       <article>
-        <h3>
+        <h5>
           05/2016 – 08/2018
-        </h3>
+        </h5>
         <h4>
           Computer Scientist , Comhard GMBH Berlin
         </h4>
@@ -200,9 +158,9 @@
         </p>
       </article>
       <article>
-        <h3>
+        <h5>
           11/2018 – 06/2019
-        </h3>
+        </h5>
         <h4>
           English -Intermediate (TOEIC), Berlitz Deutschland GmbH
         </h4>
@@ -214,7 +172,106 @@
 
   </main>
 
+  <aside>
+    <section>
+      <h4>
+        Personal Information
+      </h4>
+      <ul>
+        <li>Telegram: ptchom</li>
+        <li>Linkedin: ptchom</li>
+        <li>Skype: ptchom</li>
+        <li>Phone: +491777708999</li>
+      </ul>
+    </section>
 
+    <section>
+
+      <h4>
+        Hard Skills
+      </h4>
+      <article>
+        <h6>
+          Front-end
+        </h6>
+        <ul>
+          <li>JavaScript <i class="fab fa-js"></i> </li>
+          <li>HTML5 <i class="fab fa-html5"></i></li>
+          <li>CSS3 <i class="fab fa-css3-alt"></i>
+
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h6>
+          Back-end
+        </h6>
+        <ul>
+          <li>
+            Java <i class="fab fa-java"></i>
+          </li>
+        </ul>
+      </article>
+      <article>
+        <h6>
+          Instruments
+        </h6>
+        <ul>
+          <li>
+            Git <i class="fab fa-git-alt"></i>
+          </li>
+          <li>
+            Linux <i class="fab fa-linux"></i>
+          </li>
+          <li>
+            MySQL <i class="fas fa-database"></i>
+          </li>
+          <li>
+            JUnit5
+          </li>
+          <li>
+            Swagger
+          </li>
+        </ul>
+      </article>
+      <article>
+        <h6>
+          Other
+        </h6>
+        <ul>
+          <li>
+            Agile
+          </li>
+          <li>
+            Scrum
+          </li>
+          <li>
+            Waterfall
+          </li>
+          <li>
+            Project Management
+          </li>
+        </ul>
+      </article>
+      <article>
+        <h6>
+          Languages
+        </h6>
+        <ul>
+          <li>
+            English - B1
+          </li>
+          <li>
+            German - C2
+          </li>
+          <li>
+            Russian – native
+          </li>
+        </ul>
+      </article>
+    </section>
+  </aside>
 
 
   <!--footer-->
