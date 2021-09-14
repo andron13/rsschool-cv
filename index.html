@@ -7,6 +7,12 @@
 
   <!--  Awesome fonts-->
   <script src="https://kit.fontawesome.com/045019a4b6.js" crossorigin="anonymous"></script>
+
+  <!-- highlight.js CDN -->
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll("javascript", "code");</script>
   <!--  My Styles-->
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -43,15 +49,14 @@
       <h3>
         Code Samples
       </h3>
-      <pre><code>
-function highAndLow(numbers) {
-    let arr = numbers.split(" ")
-              .map(item => parseInt(item));
-    let min = Math.min(...arr);
-    let max = Math.max(...arr);
-    return max + " " + min;
-}
-       </code></pre>
+
+<pre><code>function highAndLow(numbers) {
+  let arr = numbers.split(" ")
+    .map(item => parseInt(item));
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  return max + " " + min;
+}</code></pre>
       <ol>
         <li>
           <a href="https://www.codewars.com/users/andron13">Codewars</a> profile
@@ -195,7 +200,7 @@ function highAndLow(numbers) {
           Front-end
         </h6>
         <ul>
-          <li>JavaScript <i class="fab fa-js"></i> </li>
+          <li>JavaScript <i class="fab fa-js"></i></li>
           <li>HTML5 <i class="fab fa-html5"></i></li>
           <li>CSS3 <i class="fab fa-css3-alt"></i>
 
