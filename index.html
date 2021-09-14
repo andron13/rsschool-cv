@@ -15,10 +15,26 @@
   <script>hljs.highlightAll("javascript", "code");</script>
   <!--  My Styles-->
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <!--  My js-->
+  <script src="assets/js/main.js"></script>
   <title>CV-HTML, CSS & Git Basics Andrej Podlubnyj</title>
 </head>
 <body>
+
+  <nav>
+    <ul id="menu" class="visible-desktop">
+      <li><a href="#education">Education</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#hard-skills">Hard Skills</a></li>
+      <li><a href="#personal-information">Personal Information</a></li>
+    </ul>
+
+    <div class="hamburg">
+      <i class="fas fa-times cross "></i>
+      <i class="fas fa-bars visible-mobile"></i>
+    </div>
+  </nav>
   <header>
     <section class="title">
       <h1>Curriculum Vitae</h1>
@@ -30,14 +46,13 @@
     <figcaption>IT Consultant</figcaption>
   </figure>
 
-
   <!--  main-->
 
   <main>
 
     <!--  summary-->
     <article>
-      <h3>Summary</h3>
+      <h3 id="summary">Summary</h3>
       <p>
         Digital Marketing Specialist with over 15 years in IT Business. I especially appreciate the ability to create
         beautiful, useful solutions and get instant visual feedback during the process. I regard myself as a persistent
@@ -46,11 +61,11 @@
     </article>
 
     <article>
-      <h3>
+      <h3 id="code">
         Code Samples
       </h3>
 
-<pre><code>function highAndLow(numbers) {
+      <pre><code>function highAndLow(numbers) {
   let arr = numbers.split(" ")
     .map(item => parseInt(item));
   let min = Math.min(...arr);
@@ -71,7 +86,7 @@
     </article>
 
     <section>
-      <h3>Experience</h3>
+      <h3 id="experience">Experience</h3>
       <article>
         <h5>
           Since 09/2018
@@ -148,7 +163,7 @@
       </article>
     </section>
     <section>
-      <h3>
+      <h3 id="education">
         Education
       </h3>
       <article>
@@ -179,7 +194,7 @@
 
   <aside>
     <section>
-      <h4>
+      <h4 id="personal-information">
         Personal Information
       </h4>
       <ul>
@@ -192,7 +207,7 @@
 
     <section>
 
-      <h4>
+      <h4 id="hard-skills">
         Hard Skills
       </h4>
       <article>
