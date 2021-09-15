@@ -32,22 +32,33 @@ body {
 
     border-top: black solid 0.5rem;
     border-bottom: black solid 0.5rem;
-
 }
 
 nav {
-    grid-column: span 2;
-    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3rem;
+    background-color: cornsilk;
+    border: solid 0.1rem hsl(51, 100%, 50%);
+}
+
+nav.hamburger-menu {
 
 }
 
-.visible-desktop {
+nav.navigation-menu {
+
+}
+
+nav li {
+    display: block;
+}
+
+.invisible {
     display: none;
 }
 
-.cross {
-    display: none;
-}
 
 h1 {
     font-size: 3rem;
@@ -132,16 +143,13 @@ footer {
         grid-column: span 2;
     }
 
-    .visible-mobile {
+    .hamburger-menu {
         display: none;
     }
 
-    .visible-desktop {
-        display: block;
-    }
-
-    .cross {
-        display: none;
+    nav {
+        grid-column: span 2;
+        text-align: right;
     }
 
     nav li {
