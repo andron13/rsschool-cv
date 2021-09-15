@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <!-- Google fonts - Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+
   <!--  Awesome fonts-->
   <script src="https://kit.fontawesome.com/045019a4b6.js" crossorigin="anonymous"></script>
 
@@ -13,10 +20,12 @@
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-light.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   <script>hljs.highlightAll("javascript", "code");</script>
+
   <!--  My Styles-->
   <link rel="stylesheet" href="assets/css/style.css">
   <!--  My js-->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
+
   <title>CV-HTML, CSS & Git Basics Andrej Podlubnyj</title>
 </head>
 <body>
@@ -30,9 +39,10 @@
       <li><a href="#personal-information">Personal Information</a></li>
     </ul>
 
-    <div class="hamburg">
-      <i class="fas fa-times cross "></i>
-      <i class="fas fa-bars visible-mobile"></i>
+    <div class="hamburger-menu">
+      <button class="hamburger-toggle visible-mobile" id="hamburger-button">
+        <i class="fas fa-bars hamburger"></i>
+      </button>
     </div>
   </nav>
   <header>
