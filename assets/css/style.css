@@ -34,31 +34,51 @@ body {
     border-bottom: black solid 0.5rem;
 }
 
+
+.fa-bars:before {
+    font-size: 3rem;
+}
+
+nav .hamburger-menu {
+    text-align: right;
+}
+
 nav {
+    font-size: 3rem;
+    /*display: none;*/
+}
+
+/*Nav opened*/
+.opened {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 3rem;
-    background-color: cornsilk;
+    background-color: rgba(255, 255, 255, 0.98);
     border: solid 0.1rem hsl(51, 100%, 50%);
+    padding: 3rem;
 }
 
-nav.hamburger-menu {
+nav.opened .navigation-menu {
+
 
 }
 
-nav.navigation-menu {
-
-}
-
-nav li {
+nav.opened li {
     display: block;
+}
+
+nav.opened .hamburger-menu {
+    position: relative;
+    top: 1rem;
+    right: 1rem
 }
 
 .invisible {
     display: none;
 }
-
+.visible{
+    display: block;
+}
 
 h1 {
     font-size: 3rem;
@@ -150,16 +170,19 @@ footer {
     nav {
         grid-column: span 2;
         text-align: right;
+        font-size: 2.2rem;
+        /*position: unset;*/
     }
 
     nav li {
         display: inline-block;
     }
 
-    #menu {
+    #navigation-menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        padding: 0;
     }
 }
