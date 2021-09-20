@@ -58,3 +58,4 @@ function showConventionalNavigation() {
 function closeConventionalNavigation() {
     /*not implement now*/
 }
+// https://webdesign.tutsplus.com/de/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535
